@@ -15,7 +15,6 @@ html {
 
 body {
     background-color: black;
-    height: 150vh;
 }
 
 header {
@@ -178,7 +177,7 @@ main {
 
 .home-bar {
     position: fixed;
-    width: 38%;
+    width: 39.5%;
     background-color: black;
     height: 109px;
     display: flex;
@@ -186,6 +185,7 @@ main {
     flex-direction: column;
     border: 0.5px  solid rgba(148, 147, 147, 0.333);
     border-left: 0px solid transparent;
+    z-index: 99;
     background-color: transparent;
     backdrop-filter: blur(26px);
 }
@@ -235,7 +235,7 @@ main {
 }
 .new-tweet {
     margin-top: 109px;
-    width: 98.2%;
+    width: 102.1%;
     border: 0.5px  solid rgba(148, 147, 147, 0.333);
     border-top: transparent;
     border-left: transparent;
@@ -278,7 +278,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(29, 156, 240, 0.086);
+    background-color: rgba(29, 156, 240, 0.193);
     border-radius: 50%;
     padding: 8px;
 }
@@ -313,4 +313,92 @@ main {
     margin-top: 0px;
     background-color: rgb(29, 155, 240);
     opacity: 0.5;
+}
+
+.tweet-posted {
+    width: 102.1%;
+    min-height: 101px;
+    display: flex;
+    padding: 12px 15px 0px 15px;
+    border: 0.5px  solid rgba(148, 147, 147, 0.333);
+    border-top: transparent;
+    border-left: transparent;
+}
+
+.tweet-posted img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.tweet-posted-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 12px;
+
+}
+
+.user-time {
+    display: flex;
+    justify-content: space-between;
+}
+.user-time a{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.user-time i {
+    font-size: 1.7rem;
+    padding-left: 2px;
+}
+
+.user-time span {
+    margin-left: 3px;
+    font-weight: 400;
+    color: grey;
+}
+
+.user-time .material-icons-outlined {
+    font-size: 2.1rem;
+    color: grey;
+}
+
+.tweet-text p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.tweet-react ul {
+    margin-top: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tweet-react ul li i{
+    color: grey;
+    font-size: 1.8rem;
+    padding: 6px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.tweet-react ul li i:hover{
+    color: rgb(29, 155, 240);
+    background-color: rgba(29, 156, 240, 0.145);
+    padding: 6px;
+}
+
+.tweet-react ul .red:hover{
+    color: rgb(249, 43, 119);
+    background-color: rgba(255, 0, 0, 0.145);
+}
+
+.tweet-react ul .green:hover{
+    color: rgb(38, 214, 38);
+    background-color: rgba(18, 242, 18, 0.145);
 }
