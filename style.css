@@ -17,8 +17,10 @@ body {
     background-color: black;
 }
 
+/* Nav Links Styling */
+
 header {
-    
+
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -96,6 +98,8 @@ header {
     background-color: rgb(2, 133, 220);
 }
 
+/* main account Styling */
+
 .main-account {
     width: 100%;
     height: 22%;
@@ -158,6 +162,7 @@ header {
     align-items: center;
 }
 
+/* Main Styling */
 main {
     margin-left: 27%;
     height: 100%;
@@ -175,6 +180,7 @@ main {
 
 }
 
+/* Home Bar Styling */
 .home-bar {
     position: fixed;
     width: 39.5%;
@@ -183,14 +189,14 @@ main {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    border: 0.5px  solid rgba(148, 147, 147, 0.333);
+    border: 0.5px solid rgba(148, 147, 147, 0.333);
     border-left: 0px solid transparent;
     z-index: 99;
     background-color: transparent;
     backdrop-filter: blur(26px);
 }
 
-.home-bar span{
+.home-bar span {
     color: white;
     font-size: 2rem;
     font-weight: 500;
@@ -233,10 +239,13 @@ main {
     background-color: rgb(29, 155, 240);
     border-radius: 5px;
 }
+
+/* new tweet Styling */
+
 .new-tweet {
     margin-top: 109px;
     width: 102.1%;
-    border: 0.5px  solid rgba(148, 147, 147, 0.333);
+    border: 0.5px solid rgba(148, 147, 147, 0.333);
     border-top: transparent;
     border-left: transparent;
     height: 120px;
@@ -257,11 +266,12 @@ main {
     width: 100%;
     margin-left: 12px;
 }
+
 .new-tweet-action ul {
     display: flex;
 }
 
-.new-tweet-action ul li{
+.new-tweet-action ul li {
     color: rgb(29, 155, 240);
 }
 
@@ -274,7 +284,7 @@ main {
     cursor: pointer;
 }
 
-.new-tweet-action ul li i:hover{
+.new-tweet-action ul li i:hover {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -282,6 +292,7 @@ main {
     border-radius: 50%;
     padding: 8px;
 }
+
 .new-tweet-action {
     display: flex;
     justify-content: space-between;
@@ -299,7 +310,7 @@ main {
     outline: none;
 }
 
-.new-tweet-details input::placeholder{
+.new-tweet-details input::placeholder {
     letter-spacing: 0.4px;
 
 }
@@ -315,12 +326,14 @@ main {
     opacity: 0.5;
 }
 
+/* tweet Posted Styling */
+
 .tweet-posted {
     width: 102.1%;
     min-height: 101px;
     display: flex;
     padding: 12px 15px 0px 15px;
-    border: 0.5px  solid rgba(148, 147, 147, 0.333);
+    border: 0.5px solid rgba(148, 147, 147, 0.333);
     border-top: transparent;
     border-left: transparent;
 }
@@ -343,7 +356,8 @@ main {
     display: flex;
     justify-content: space-between;
 }
-.user-time a{
+
+.user-time a {
     display: flex;
     align-items: center;
     color: white;
@@ -354,10 +368,19 @@ main {
 
 .user-time i {
     font-size: 1.7rem;
-    padding-left: 2px;
+    padding: 3.5px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.user-time i:hover {
+    padding: 3.5px;
+    color: rgb(29, 155, 240);
+    background-color: rgba(29, 156, 240, 0.145);
 }
 
 .user-time span {
+    font-size: 1.4rem;
     margin-left: 3px;
     font-weight: 400;
     color: grey;
@@ -373,6 +396,7 @@ main {
     font-size: 1.5rem;
     font-weight: 300;
 }
+
 .tweet-react ul {
     margin-top: 9px;
     display: flex;
@@ -380,25 +404,26 @@ main {
     justify-content: space-between;
 }
 
-.tweet-react ul li i{
+.tweet-react ul li i {
     color: grey;
     font-size: 1.8rem;
-    padding: 6px;
+    padding: 4px;
     border-radius: 50%;
     transition: 0.3s;
 }
-.tweet-react ul li i:hover{
+
+.tweet-react ul li i:hover {
     color: rgb(29, 155, 240);
     background-color: rgba(29, 156, 240, 0.145);
-    padding: 6px;
+    padding: 4px;
 }
 
-.tweet-react ul .red:hover{
+.tweet-react ul .red:hover {
     color: rgb(249, 43, 119);
     background-color: rgba(255, 0, 0, 0.145);
 }
 
-.tweet-react ul .green:hover{
+.tweet-react ul .green:hover {
     color: rgb(38, 214, 38);
     background-color: rgba(18, 242, 18, 0.145);
 }
